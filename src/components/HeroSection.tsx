@@ -74,16 +74,22 @@ export const HeroSection = () => {
                 { name: "LIQUI MOLY", logo: liquiMolyLogo, country: "🇩🇪", description: "Tecnologia Alemã" }
               ].map((brand) => (
                 <div key={brand.name} className="flex flex-col items-center group cursor-pointer transition-all duration-300 hover:scale-105">
-                  <div className="text-2xl mb-2">{brand.country}</div>
-                  <div className="text-sm font-bold text-white mb-1">{brand.name}</div>
-                  <div className="text-xs text-white/70 mb-3">{brand.description}</div>
-                  <div className="w-16 h-16 bg-white/10 backdrop-blur-sm rounded-lg p-2 flex items-center justify-center group-hover:bg-white/20 transition-all duration-300">
+                  <div className="w-20 h-20 mb-2 bg-white/10 backdrop-blur-sm rounded-lg p-3 flex items-center justify-center group-hover:bg-white/20 transition-all duration-300 relative">
                     <img 
                       src={brand.logo} 
                       alt={`${brand.name} logo`}
                       className="w-full h-full object-contain"
                     />
+                    <div className="absolute -top-2 -right-2 text-lg">
+                      {brand.country}
+                    </div>
                   </div>
+                  <span className="text-xs text-white/70 font-medium tracking-wide group-hover:text-secondary transition-colors">
+                    {brand.name}
+                  </span>
+                  <span className="text-xs text-white/50 text-center mt-1">
+                    {brand.description}
+                  </span>
                 </div>
               ))}
             </div>
