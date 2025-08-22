@@ -1,6 +1,6 @@
 import { ArrowRight, Zap, Award, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-banner-original.jpg";
+import heroImage from "@/assets/hero-automotive.jpg";
 
 export const HeroSection = () => {
   return (
