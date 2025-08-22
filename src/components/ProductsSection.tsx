@@ -79,7 +79,7 @@ export const ProductsSection = () => {
             <img 
               src={productsImage} 
               alt="Showcase de produtos ViALUB - lubrificantes e filtros automotivos"
-              className="w-full h-80 md:h-96 object-cover"
+              className="w-full h-80 md:h-96 object-contain bg-black"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-transparent flex items-center">
               <div className="p-8 md:p-12 text-white max-w-lg">
