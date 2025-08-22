@@ -31,14 +31,6 @@ export const ProductsSection = () => {
     }
   ];
 
-  const brands = [
-    { name: "MANNOL", country: "🇩🇪", specialty: "Óleos Premium" },
-    { name: "ATF6000", country: "🇧🇷", specialty: "Fluidos Automáticos" },
-    { name: "PEAK", country: "🇺🇸", specialty: "Aditivos" },
-    { name: "LUBEGARD", country: "🇺🇸", specialty: "Protetores" },
-    { name: "THE EAGLE", country: "🇺🇸", specialty: "Filtros" },
-    { name: "LIQUI MOLY", country: "🇩🇪", specialty: "Tecnologia Alemã" }
-  ];
 
   return (
     <section id="produtos" className="py-20 bg-muted/30">
@@ -107,25 +99,6 @@ export const ProductsSection = () => {
           </div>
         </div>
 
-        {/* Brands Grid */}
-        <div className="text-center">
-          <h3 className="text-2xl md:text-3xl font-bold mb-8">
-            <span className="text-gradient">Marcas Parceiras</span>
-          </h3>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-            {brands.map((brand, index) => (
-              <Card key={index} className="card-premium group cursor-pointer">
-                <CardContent className="p-4 text-center">
-                  <div className="text-2xl mb-2">{brand.country}</div>
-                  <h4 className="font-bold text-sm mb-1 group-hover:text-secondary transition-colors">
-                    {brand.name}
-                  </h4>
-                  <p className="text-xs text-muted-foreground">{brand.specialty}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );
