@@ -4,9 +4,9 @@ import heroImage from "@/assets/hero-automotive.jpg";
 import mannolLogo from "/lovable-uploads/61fd8682-beb7-470d-b479-14a0f686a6a5.png";
 import atf6000Logo from "@/assets/logos/atf6000-logo.png";
 import peakLogo from "/lovable-uploads/d94222f8-3100-4ba4-aa84-dd12b71f9772.png";
-import lubegardLogo from "@/assets/logos/lubegard-logo.png";
+import lubegardLogo from "/lovable-uploads/ed3944b4-ccf8-4870-9ce0-09a69e32ab06.png";
 import theEagleLogo from "/lovable-uploads/a03da6db-162f-4003-8582-74ed21cd3757.png";
-import liquiMolyLogo from "@/assets/logos/liqui-moly-logo.png";
+import liquiMolyLogo from "/lovable-uploads/dfe354ac-6a81-428c-8706-4ee7540895fb.png";
 
 export const HeroSection = () => {
   return (
