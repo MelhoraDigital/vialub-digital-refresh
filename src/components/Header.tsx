@@ -8,7 +8,6 @@ export const Header = () => {
 
   const navigationItems = [
     { label: "Produtos", href: "#produtos" },
-    { label: "Marcas", href: "#marcas" },
     { label: "Sobre", href: "#sobre" },
     { label: "Contato", href: "#contato" }
   ];
