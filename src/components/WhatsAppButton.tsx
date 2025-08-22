@@ -6,8 +6,8 @@ export const WhatsAppButton = () => {
   const message = "Olá! Gostaria de saber mais sobre os produtos ViALUB.";
   
   const handleWhatsAppClick = () => {
-    // Usando URL alternativa que funciona melhor em todos os dispositivos
-    const url = `https://api.whatsapp.com/send/?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
+    // Usando URL mais simples que funciona universalmente
+    const url = `https://wa.me/${phoneNumber}`;
     window.open(url, '_blank');
   };
 
