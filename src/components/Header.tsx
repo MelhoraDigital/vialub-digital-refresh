@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import vialubLogo from "@/assets/vialub-logo.png";
+import vialubLogo from "/lovable-uploads/bfd8d341-f27d-413d-b0d4-674c402d16f8.png";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,7 +21,7 @@ export const Header = () => {
             <img 
               src={vialubLogo} 
               alt="ViALUB - Produtos Automotivos" 
-              className="h-12 w-auto"
+              className="h-16 w-auto"
             />
           </div>
 
