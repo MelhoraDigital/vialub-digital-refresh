@@ -66,35 +66,24 @@ export const HeroSection = () => {
             </p>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center justify-items-center">
               {[
-                { name: "MANNOL", logo: mannolLogo, country: "DE", flag: "🇩🇪", description: "Óleos Premium" },
-                { name: "ATF6000", logo: atf6000Logo, country: "BR", flag: "🇧🇷", description: "Fluidos Automáticos" },
-                { name: "PEAK", logo: peakLogo, country: "US", flag: "🇺🇸", description: "Aditivos" },
-                { name: "LUBEGARD", logo: lubegardLogo, country: "US", flag: "🇺🇸", description: "Protetores" },
-                { name: "THE EAGLE", logo: theEagleLogo, country: "US", flag: "🇺🇸", description: "Filtros" },
-                { name: "LIQUI MOLY", logo: liquiMolyLogo, country: "DE", flag: "🇩🇪", description: "Tecnologia Alemã" }
+                { name: "MANNOL", logo: mannolLogo },
+                { name: "ATF6000", logo: atf6000Logo },
+                { name: "PEAK", logo: peakLogo },
+                { name: "LUBEGARD", logo: lubegardLogo },
+                { name: "THE EAGLE", logo: theEagleLogo },
+                { name: "LIQUI MOLY", logo: liquiMolyLogo }
               ].map((brand) => (
                 <div key={brand.name} className="flex flex-col items-center group cursor-pointer transition-all duration-300 hover:scale-105">
-                  <div className="relative w-20 h-20 mb-2 bg-white/10 backdrop-blur-sm rounded-lg p-3 flex items-center justify-center group-hover:bg-white/20 transition-all duration-300">
+                  <div className="w-20 h-20 mb-2 bg-white/10 backdrop-blur-sm rounded-lg p-3 flex items-center justify-center group-hover:bg-white/20 transition-all duration-300">
                     <img 
                       src={brand.logo} 
                       alt={`${brand.name} logo`}
                       className="w-full h-full object-contain"
                     />
-                    <div className="absolute -top-1 -right-1 text-lg">
-                      {brand.flag}
-                    </div>
                   </div>
-                  <div className="text-center">
-                    <div className="text-xs text-white/90 font-semibold mb-1 tracking-wide">
-                      {brand.country}
-                    </div>
-                    <div className="text-xs text-white/90 font-semibold mb-1">
-                      {brand.name}
-                    </div>
-                    <div className="text-xs text-white/70 font-medium">
-                      {brand.description}
-                    </div>
-                  </div>
+                  <span className="text-xs text-white/70 font-medium tracking-wide group-hover:text-secondary transition-colors">
+                    {brand.name}
+                  </span>
                 </div>
               ))}
             </div>
