@@ -7,6 +7,9 @@ import peakLogo from "/lovable-uploads/d94222f8-3100-4ba4-aa84-dd12b71f9772.png"
 import lubegardLogo from "/lovable-uploads/ed3944b4-ccf8-4870-9ce0-09a69e32ab06.png";
 import theEagleLogo from "/lovable-uploads/a03da6db-162f-4003-8582-74ed21cd3757.png";
 import liquiMolyLogo from "/lovable-uploads/dfe354ac-6a81-428c-8706-4ee7540895fb.png";
+import germanFlag from "@/assets/flags/de.png";
+import brazilFlag from "@/assets/flags/br.png";
+import usaFlag from "@/assets/flags/us.png";
 
 export const HeroSection = () => {
   return (
@@ -66,12 +69,12 @@ export const HeroSection = () => {
             </p>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center justify-items-center">
               {[
-                { name: "MANNOL", logo: mannolLogo, country: "🇩🇪", description: "Óleos Premium" },
-                { name: "ATF6000", logo: atf6000Logo, country: "🇧🇷", description: "Fluidos Automáticos" },
-                { name: "PEAK", logo: peakLogo, country: "🇺🇸", description: "Aditivos" },
-                { name: "LUBEGARD", logo: lubegardLogo, country: "🇺🇸", description: "Protetores" },
-                { name: "THE EAGLE", logo: theEagleLogo, country: "🇺🇸", description: "Filtros" },
-                { name: "LIQUI MOLY", logo: liquiMolyLogo, country: "🇩🇪", description: "Tecnologia Alemã" }
+                { name: "MANNOL", logo: mannolLogo, flag: germanFlag, description: "Óleos Premium" },
+                { name: "ATF6000", logo: atf6000Logo, flag: brazilFlag, description: "Fluidos Automáticos" },
+                { name: "PEAK", logo: peakLogo, flag: usaFlag, description: "Aditivos" },
+                { name: "LUBEGARD", logo: lubegardLogo, flag: usaFlag, description: "Protetores" },
+                { name: "THE EAGLE", logo: theEagleLogo, flag: usaFlag, description: "Filtros" },
+                { name: "LIQUI MOLY", logo: liquiMolyLogo, flag: germanFlag, description: "Tecnologia Alemã" }
               ].map((brand) => (
                 <div key={brand.name} className="flex flex-col items-center group cursor-pointer transition-all duration-300 hover:scale-105">
                   <div className="w-20 h-20 mb-2 bg-white/10 backdrop-blur-sm rounded-lg p-3 flex items-center justify-center group-hover:bg-white/20 transition-all duration-300 relative">
@@ -80,8 +83,12 @@ export const HeroSection = () => {
                       alt={`${brand.name} logo`}
                       className="w-full h-full object-contain"
                     />
-                    <div className="absolute -top-2 -right-2 text-lg">
-                      {brand.country}
+                    <div className="absolute -top-2 -right-2 w-6 h-4">
+                      <img 
+                        src={brand.flag} 
+                        alt="Country flag"
+                        className="w-full h-full object-cover rounded-sm"
+                      />
                     </div>
                   </div>
                   <span className="text-xs text-white/70 font-medium tracking-wide group-hover:text-secondary transition-colors">
