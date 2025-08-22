@@ -1,6 +1,6 @@
 import { ArrowRight, Zap, Award, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-automotive.jpg";
+import heroImage from "/lovable-uploads/0b598e60-8ece-4c38-94c4-48f761470626.png";
 import mannolLogo from "/lovable-uploads/61fd8682-beb7-470d-b479-14a0f686a6a5.png";
 import atf6000Logo from "@/assets/logos/atf6000-logo.png";
 import peakLogo from "/lovable-uploads/d94222f8-3100-4ba4-aa84-dd12b71f9772.png";
