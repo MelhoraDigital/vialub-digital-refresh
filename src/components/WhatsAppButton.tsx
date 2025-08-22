@@ -6,14 +6,15 @@ export const WhatsAppButton = () => {
   const message = "Olá! Gostaria de saber mais sobre os produtos ViALUB.";
   
   const handleWhatsAppClick = () => {
-    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    // Usando URL alternativa que funciona melhor em todos os dispositivos
+    const url = `https://api.whatsapp.com/send/?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
   };
 
   return (
     <Button
       onClick={handleWhatsAppClick}
-      className="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-green-500 hover:bg-green-600 text-white shadow-lg hover:shadow-xl transition-all duration-300 animate-pulse"
+      className="fixed bottom-20 right-6 z-40 w-14 h-14 rounded-full bg-green-500 hover:bg-green-600 text-white shadow-lg hover:shadow-xl transition-all duration-300"
       size="icon"
       aria-label="Contato WhatsApp"
     >
