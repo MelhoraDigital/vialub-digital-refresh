@@ -22,7 +22,7 @@ export const Header = () => {
             <img 
               src={vialubLogo} 
               alt="ViALUB - Produtos Automotivos" 
-              className="h-8 w-auto"
+              className="h-12 w-auto"
             />
           </div>
 
