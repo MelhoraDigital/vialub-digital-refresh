@@ -1,11 +1,11 @@
 import { ArrowRight, Zap, Award, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-automotive.jpg";
-import mannolLogo from "@/assets/logos/mannol-logo.png";
+import mannolLogo from "/lovable-uploads/61fd8682-beb7-470d-b479-14a0f686a6a5.png";
 import atf6000Logo from "@/assets/logos/atf6000-logo.png";
-import peakLogo from "@/assets/logos/peak-logo.png";
+import peakLogo from "/lovable-uploads/d94222f8-3100-4ba4-aa84-dd12b71f9772.png";
 import lubegardLogo from "@/assets/logos/lubegard-logo.png";
-import theEagleLogo from "@/assets/logos/the-eagle-logo.png";
+import theEagleLogo from "/lovable-uploads/a03da6db-162f-4003-8582-74ed21cd3757.png";
 import liquiMolyLogo from "@/assets/logos/liqui-moly-logo.png";
 
 export const HeroSection = () => {
@@ -78,7 +78,7 @@ export const HeroSection = () => {
                     <img 
                       src={brand.logo} 
                       alt={`${brand.name} logo`}
-                      className="w-full h-full object-contain filter brightness-0 invert"
+                      className="w-full h-full object-contain"
                     />
                   </div>
                   <span className="text-xs text-white/70 font-medium tracking-wide group-hover:text-secondary transition-colors">
