@@ -1,6 +1,12 @@
 import { ArrowRight, Zap, Award, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-automotive.jpg";
+import mannolLogo from "@/assets/logos/mannol-logo.png";
+import atf6000Logo from "@/assets/logos/atf6000-logo.png";
+import peakLogo from "@/assets/logos/peak-logo.png";
+import lubegardLogo from "@/assets/logos/lubegard-logo.png";
+import theEagleLogo from "@/assets/logos/the-eagle-logo.png";
+import liquiMolyLogo from "@/assets/logos/liqui-moly-logo.png";
 
 export const HeroSection = () => {
   return (
@@ -52,30 +58,32 @@ export const HeroSection = () => {
             </div>
           </div>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
-            <Button size="lg" className="btn-hero text-lg px-8 py-4">
-              Ver Produtos
-              <ArrowRight size={20} className="ml-2" />
-            </Button>
-            <Button 
-              size="lg" 
-              variant="outline" 
-              className="btn-outline-premium text-lg px-8 py-4 text-white border-white hover:bg-white hover:text-primary"
-            >
-              Solicitar Acesso
-            </Button>
-          </div>
 
           {/* Brand Logos Section */}
           <div className="mt-16 animate-fade-in">
-            <p className="text-sm text-muted-foreground mb-6 uppercase tracking-wider">
+            <p className="text-sm text-white/70 mb-8 uppercase tracking-wider">
               Distribuição, lubrificantes e aditivos
             </p>
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-6 items-center justify-items-center opacity-80">
-              {["MANNOL", "ATF6000", "PEAK", "LUBEGARD", "THE EAGLE", "LIQUI MOLY"].map((brand) => (
-                <div key={brand} className="text-white/80 font-semibold text-sm tracking-wide hover:text-secondary transition-colors cursor-pointer">
-                  {brand}
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center justify-items-center">
+              {[
+                { name: "MANNOL", logo: mannolLogo },
+                { name: "ATF6000", logo: atf6000Logo },
+                { name: "PEAK", logo: peakLogo },
+                { name: "LUBEGARD", logo: lubegardLogo },
+                { name: "THE EAGLE", logo: theEagleLogo },
+                { name: "LIQUI MOLY", logo: liquiMolyLogo }
+              ].map((brand) => (
+                <div key={brand.name} className="flex flex-col items-center group cursor-pointer transition-all duration-300 hover:scale-105">
+                  <div className="w-20 h-20 mb-2 bg-white/10 backdrop-blur-sm rounded-lg p-3 flex items-center justify-center group-hover:bg-white/20 transition-all duration-300">
+                    <img 
+                      src={brand.logo} 
+                      alt={`${brand.name} logo`}
+                      className="w-full h-full object-contain filter brightness-0 invert"
+                    />
+                  </div>
+                  <span className="text-xs text-white/70 font-medium tracking-wide group-hover:text-secondary transition-colors">
+                    {brand.name}
+                  </span>
                 </div>
               ))}
             </div>

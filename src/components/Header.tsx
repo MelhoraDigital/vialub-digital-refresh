@@ -39,12 +39,6 @@ export const Header = () => {
             ))}
           </nav>
 
-          {/* CTA Button */}
-          <div className="hidden md:block">
-            <Button className="btn-hero">
-              Solicitar Acesso
-            </Button>
-          </div>
 
           {/* Mobile Menu Button */}
           <button
@@ -70,11 +64,6 @@ export const Header = () => {
                   {item.label}
                 </a>
               ))}
-              <div className="px-4 pt-4">
-                <Button className="btn-hero w-full">
-                  Solicitar Acesso
-                </Button>
-              </div>
             </nav>
           </div>
         )}
