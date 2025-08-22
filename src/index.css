@@ -2,95 +2,125 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* ViALUB Design System - Premium Automotive Brand
+All colors MUST be HSL. Modern, professional, performance-focused.
 */
 
 @layer base {
   :root {
+    /* Core Brand Colors */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 220 13% 13%;
 
+    /* Card System */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 220 13% 13%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 220 13% 13%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary Brand - Deep automotive blue */
+    --primary: 220 100% 12%;
+    --primary-foreground: 0 0% 98%;
+    --primary-glow: 220 100% 25%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary - Performance yellow/gold */
+    --secondary: 45 100% 51%;
+    --secondary-foreground: 220 100% 12%;
+    --secondary-dark: 45 100% 35%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted tones */
+    --muted: 220 13% 95%;
+    --muted-foreground: 220 9% 46%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent - Tech blue */
+    --accent: 217 91% 60%;
+    --accent-foreground: 0 0% 98%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Status colors */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* UI Elements */
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 220 100% 12%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
+    /* Premium Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-secondary: linear-gradient(135deg, hsl(var(--secondary)), hsl(var(--secondary-dark)));
+    --gradient-hero: linear-gradient(135deg, hsl(220 100% 8%), hsl(220 100% 15%));
+    --gradient-accent: linear-gradient(90deg, hsl(var(--accent)) 0%, hsl(var(--secondary)) 100%);
+
+    /* Premium Shadows */
+    --shadow-premium: 0 25px 50px -12px hsl(var(--primary) / 0.25);
+    --shadow-glow: 0 0 40px hsl(var(--secondary) / 0.3);
+    --shadow-card: 0 4px 20px hsl(220 13% 13% / 0.1);
+
+    /* Animations */
+    --transition-premium: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Sidebar - keeping for compatibility */
     --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
+    --sidebar-foreground: 220 13% 26%;
+    --sidebar-primary: 220 100% 12%;
     --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
+    --sidebar-accent: 220 13% 95%;
+    --sidebar-accent-foreground: 220 100% 12%;
     --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-ring: 220 91% 60%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Dark theme - premium automotive feel */
+    --background: 220 13% 9%;
+    --foreground: 0 0% 98%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 220 13% 11%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 220 13% 11%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 45 100% 51%;
+    --primary-foreground: 220 13% 9%;
+    --primary-glow: 45 100% 65%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 220 13% 18%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 220 13% 15%;
+    --muted-foreground: 220 9% 65%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 217 91% 60%;
+    --accent-foreground: 220 13% 9%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 220 13% 18%;
+    --input: 220 13% 18%;
+    --ring: 45 100% 51%;
+
+    /* Dark gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(220 13% 6%), hsl(220 13% 12%));
+    --shadow-premium: 0 25px 50px -12px hsl(0 0% 0% / 0.5);
+    --shadow-glow: 0 0 40px hsl(var(--primary) / 0.3);
+
+    /* Dark sidebar */
+    --sidebar-background: 220 13% 8%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 45 100% 51%;
+    --sidebar-primary-foreground: 220 13% 9%;
+    --sidebar-accent: 220 13% 15%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 220 13% 15%;
+    --sidebar-ring: 45 100% 51%;
   }
 }
 
@@ -100,6 +130,62 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* Premium scrollbar */
+  ::-webkit-scrollbar {
+    @apply w-2;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-muted;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-muted-foreground/30 rounded-full;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-muted-foreground/50;
+  }
+}
+
+@layer components {
+  /* Premium button variants */
+  .btn-hero {
+    @apply bg-gradient-to-r from-secondary to-secondary-dark text-primary font-semibold px-8 py-4 rounded-lg shadow-glow transition-all duration-300 hover:shadow-xl hover:scale-105;
+  }
+  
+  .btn-outline-premium {
+    @apply border-2 border-secondary text-secondary bg-transparent font-semibold px-6 py-3 rounded-lg transition-all duration-300 hover:bg-secondary hover:text-primary hover:shadow-lg;
+  }
+
+  /* Text effects */
+  .text-gradient {
+    @apply bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent;
+  }
+
+  /* Card effects */
+  .card-premium {
+    @apply bg-card border border-border rounded-xl shadow-card backdrop-blur-sm transition-all duration-300 hover:shadow-premium hover:scale-[1.02];
+  }
+
+  /* Hero section effects */
+  .hero-bg {
+    background: var(--gradient-hero);
+    background-size: 200% 200%;
+    animation: gradientShift 8s ease-in-out infinite;
+  }
+
+  @keyframes gradientShift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+
+  /* Performance indicators */
+  .performance-indicator {
+    @apply inline-flex items-center gap-2 bg-secondary/10 border border-secondary/20 text-secondary px-3 py-1 rounded-full text-sm font-medium;
   }
 }
