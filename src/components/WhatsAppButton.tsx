@@ -1,8 +1,8 @@
+
 import { MessageCircle } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 export const WhatsAppButton = () => {
-  const phoneNumber = "5511989521693"; // Número do WhatsApp sem símbolos
+  const phoneNumber = "5511989521693";
   const message = "Olá! Gostaria de saber mais sobre os produtos ViALUB.";
   
   const handleWhatsAppClick = () => {
@@ -12,13 +12,12 @@ export const WhatsAppButton = () => {
   };
 
   return (
-    <Button
+    <button
       onClick={handleWhatsAppClick}
-      className="fixed bottom-20 right-6 z-40 w-14 h-14 rounded-full bg-green-500 hover:bg-green-600 text-white shadow-lg hover:shadow-xl transition-all duration-300"
-      size="icon"
-      aria-label="Contato WhatsApp"
+      className="fixed bottom-24 md:bottom-6 right-4 md:right-6 z-40 bg-green-500 hover:bg-green-600 text-white p-3 md:p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 animate-bounce"
+      aria-label="Conversar no WhatsApp"
     >
       <MessageCircle size={24} />
-    </Button>
+    </button>
   );
 };

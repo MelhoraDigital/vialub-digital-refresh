@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -15,13 +16,13 @@ export const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white backdrop-blur-xl border-b border-border shadow-sm">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-14 md:h-16">
           {/* Logo */}
           <div className="flex items-center">
             <img 
               src={vialubLogo} 
               alt="ViALUB - Produtos Automotivos" 
-              className="h-16 w-auto"
+              className="h-12 md:h-16 w-auto"
             />
           </div>
 
@@ -37,7 +38,6 @@ export const Header = () => {
               </a>
             ))}
           </nav>
-
 
           {/* Mobile Menu Button */}
           <button
