@@ -49,15 +49,15 @@ export const HeroSection = () => {
           {/* Brand Features */}
           <div className="flex flex-wrap justify-center gap-3 md:gap-6 mb-8 md:mb-10 animate-fade-in px-4">
             <div className="flex items-center gap-2 bg-primary/20 backdrop-blur-sm px-3 py-2 md:px-4 md:py-2 rounded-full border border-secondary/30">
-              <Award size={16} md:size={20} className="text-secondary" />
+              <Award size={18} className="text-secondary" />
               <span className="font-medium text-sm md:text-base">Marcas Premium</span>
             </div>
             <div className="flex items-center gap-2 bg-primary/20 backdrop-blur-sm px-3 py-2 md:px-4 md:py-2 rounded-full border border-secondary/30">
-              <Shield size={16} md:size={20} className="text-secondary" />
+              <Shield size={18} className="text-secondary" />
               <span className="font-medium text-sm md:text-base">Qualidade Garantida</span>
             </div>
             <div className="flex items-center gap-2 bg-primary/20 backdrop-blur-sm px-3 py-2 md:px-4 md:py-2 rounded-full border border-secondary/30">
-              <Zap size={16} md:size={20} className="text-secondary" />
+              <Zap size={18} className="text-secondary" />
               <span className="font-medium text-sm md:text-base">Alta Performance</span>
             </div>
           </div>
