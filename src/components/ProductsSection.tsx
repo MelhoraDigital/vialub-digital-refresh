@@ -14,7 +14,7 @@ export const ProductsSection = () => {
     },
     {
       icon: <Filter className="w-8 h-8 text-secondary" />,
-      title: "Filtros Automotivos",
+      title: "Filtros de Transmissão",
       description: "Filtros de alta qualidade para proteção máxima do sistema.",
       features: ["Automáticas Convencionais", "Dupla Embreagem", "CVT"]
     },
