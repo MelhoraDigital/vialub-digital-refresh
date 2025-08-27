@@ -16,7 +16,7 @@ export const ProductsSection = () => {
       icon: <Filter className="w-8 h-8 text-secondary" />,
       title: "Filtros Automotivos",
       description: "Filtros de alta qualidade para proteção máxima do sistema.",
-      features: ["Óleo", "Combustível", "Ar", "Cabine"]
+      features: ["Automáticas Convencionais", "Dupla Embreagem", "CVT"]
     },
     {
       icon: <Cog className="w-8 h-8 text-secondary" />,
