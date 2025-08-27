@@ -34,8 +34,8 @@ export const AboutSection = () => {
     },
     {
       icon: <Clock className="w-8 h-8 text-secondary" />,
-      number: "24h",
-      label: "Suporte",
+      number: "Suporte",
+      label: "Especializado",
       description: "Atendimento especializado"
     }
   ];
