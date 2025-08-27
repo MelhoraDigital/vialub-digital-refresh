@@ -67,14 +67,12 @@ export const HeroSection = () => {
             <p className="text-xs md:text-sm text-white/70 mb-6 md:mb-8 uppercase tracking-wider">
               Distribuição, lubrificantes e aditivos
             </p>
-            <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-8 items-center justify-items-center">
+            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 items-center justify-items-center">
               {[
                 { name: "MANNOL", logo: mannolLogo, flag: germanFlag, description: "Óleos Premium" },
                 { name: "ATF6000", logo: atf6000Logo, flag: brazilFlag, description: "Fluidos Automáticos" },
-                { name: "PEAK", logo: peakLogo, flag: usaFlag, description: "Aditivos" },
                 { name: "LUBEGARD", logo: lubegardLogo, flag: usaFlag, description: "Protetores" },
-                { name: "THE EAGLE", logo: theEagleLogo, flag: usaFlag, description: "Filtros" },
-                { name: "LIQUI MOLY", logo: liquiMolyLogo, flag: germanFlag, description: "Tecnologia Alemã" }
+                { name: "THE EAGLE", logo: theEagleLogo, flag: usaFlag, description: "Filtros" }
               ].map((brand) => (
                 <div key={brand.name} className="flex flex-col items-center group cursor-pointer transition-all duration-300 hover:scale-105">
                   <div className="w-16 h-16 md:w-20 md:h-20 mb-2 bg-white/10 backdrop-blur-sm rounded-lg p-2 md:p-3 flex items-center justify-center group-hover:bg-white/20 transition-all duration-300 relative">
