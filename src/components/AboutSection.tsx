@@ -152,24 +152,10 @@ export const AboutSection = () => {
               Pronto para <span className="text-gradient">Começar?</span>
             </h2>
             
-            <p className="text-xl text-muted-foreground mb-8">
+            <p className="text-xl text-muted-foreground mb-12">
               Solicite acesso à nossa plataforma e descubra como podemos otimizar 
               o fornecimento de produtos automotivos para seu negócio.
             </p>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <Button size="lg" className="btn-hero text-lg px-8 py-4">
-                Solicitar Acesso
-                <ArrowRight size={20} className="ml-2" />
-              </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="btn-outline-premium text-lg px-8 py-4"
-              >
-                Falar com Consultor
-              </Button>
-            </div>
 
             {/* Contact Info */}
             <div className="grid md:grid-cols-3 gap-6">
