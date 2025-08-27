@@ -28,7 +28,7 @@ export const AboutSection = () => {
     },
     {
       icon: <Truck className="w-8 h-8 text-secondary" />,
-      number: "6",
+      number: "4",
       label: "Marcas Premium",
       description: "Melhores marcas mundiais"
     },
