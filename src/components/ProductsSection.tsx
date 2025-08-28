@@ -2,7 +2,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Droplets, Filter, Cog, Wrench, ArrowRight } from "lucide-react";
-import productsImage from "/lovable-uploads/88daf1bc-11ab-4f55-9eeb-bf738e4102db.png";
+import productsImage from "/lovable-uploads/e1d58aaf-a61f-4d85-baee-148c6132d2a2.png";
 
 export const ProductsSection = () => {
   const productCategories = [
