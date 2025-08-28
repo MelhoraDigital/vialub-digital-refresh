@@ -14,7 +14,7 @@ export const WhatsAppButton = () => {
   return (
     <button
       onClick={handleWhatsAppClick}
-      className="fixed bottom-24 md:bottom-6 right-4 md:right-6 z-40 bg-green-500 hover:bg-green-600 text-white p-3 md:p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 animate-bounce"
+      className="fixed bottom-32 md:bottom-20 right-4 md:right-6 z-40 bg-green-500 hover:bg-green-600 text-white p-3 md:p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
       aria-label="Conversar no WhatsApp"
     >
       <MessageCircle size={24} />
