@@ -10,7 +10,7 @@ export const ProductsSection = () => {
       icon: <Droplets className="w-8 h-8 text-secondary" />,
       title: "Óleos Lubrificantes",
       description: "Linha completa de óleos automotivos para motores, câmbios e diferenciais.",
-      features: ["Motor", "Câmbio", "Diferencial", "Hidráulico"]
+      features: ["Motor", "Transmissões automáticas e manuais", "Diferencial", "Hidráulico"]
     },
     {
       icon: <Filter className="w-8 h-8 text-secondary" />,
