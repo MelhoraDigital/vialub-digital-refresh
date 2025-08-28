@@ -57,10 +57,8 @@ export const Footer = () => {
             <ul className="space-y-3">
               <li><a href="#" className="text-primary-foreground/80 hover:text-secondary transition-colors">Mannol</a></li>
               <li><a href="#" className="text-primary-foreground/80 hover:text-secondary transition-colors">ATF6000</a></li>
-              <li><a href="#" className="text-primary-foreground/80 hover:text-secondary transition-colors">Peak</a></li>
               <li><a href="#" className="text-primary-foreground/80 hover:text-secondary transition-colors">Lubegard</a></li>
               <li><a href="#" className="text-primary-foreground/80 hover:text-secondary transition-colors">The Eagle</a></li>
-              <li><a href="#" className="text-primary-foreground/80 hover:text-secondary transition-colors">Liqui Moly</a></li>
             </ul>
           </div>
         </div>
