@@ -39,7 +39,13 @@ jobs:
           cache: 'npm'
           
       - name: Install dependencies
-        run: npm ci
+        run: |
+          if [ -f bun.lockb ]; then
+            npm install --package-lock-only
+            npm ci
+          else
+            npm ci
+          fi
         
       - name: Build project
         run: npm run build
