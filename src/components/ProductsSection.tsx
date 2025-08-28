@@ -9,7 +9,7 @@ export const ProductsSection = () => {
     {
       icon: <Droplets className="w-8 h-8 text-secondary" />,
       title: "Óleos Lubrificantes",
-      description: "Linha completa de óleos automotivos para motores, câmbios e diferenciais.",
+      description: "Linha completa de óleos automotivos para motores, transmissões automáticas e manuais e diferenciais.",
       features: ["Motor", "Transmissões automáticas e manuais", "Diferencial", "Hidráulico"]
     },
     {
@@ -64,7 +64,7 @@ export const ProductsSection = () => {
                   {category.features.map((feature, featureIndex) => (
                     <div key={featureIndex} className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 bg-secondary rounded-full"></div>
-                      <span className="text-sm font-medium">{feature}</span>
+                      <span className="text-xs font-medium">{feature}</span>
                     </div>
                   ))}
                 </div>
